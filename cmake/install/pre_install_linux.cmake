@@ -15,16 +15,6 @@ FUNCTION(before_copy_platform FILE_PATH RET_VAL)
     ENDIF()
   ENDIF()
 
-  IF(FILE_PATH MATCHES "${RV_STAGE_LIB_DIR}/libcrypto"
-     OR FILE_PATH MATCHES "${RV_STAGE_LIB_DIR}/libssl"
-  )
-    SET(${RET_VAL}
-        "NO"
-        PARENT_SCOPE
-    )
-    RETURN()
-  ENDIF()
-
   SET(${RET_VAL}
       "YES"
       PARENT_SCOPE
