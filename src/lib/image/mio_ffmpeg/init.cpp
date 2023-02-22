@@ -32,6 +32,7 @@ using namespace boost;
 //
 
 static const char* disallowedCodecsArray[] = {
+/*
     "ac3",
     "hevc",
     "mpeg2video",
@@ -41,6 +42,7 @@ static const char* disallowedCodecsArray[] = {
     "prores_lgpl",
     "svq1",
     "svq3",
+*/
     0 };
 
 extern "C" {
